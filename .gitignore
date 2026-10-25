@@ -1,0 +1,19 @@
+# Application logs
+backend/logs/*
+!backend/logs/.gitkeep
+
+# Environment and secret files
+.env
+.env.*
+!.env.example
+
+# Dependencies
+vendor/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
