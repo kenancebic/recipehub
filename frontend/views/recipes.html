@@ -1,0 +1,178 @@
+<section class="page-header">
+    <div class="container">
+        <span class="hero-label">FIND SOMETHING DELICIOUS</span>
+        <h1 class="mt-2">Explore Recipes</h1>
+        <p class="mb-0">
+            Discover new flavors, find inspiration and choose your next favorite meal.
+        </p>
+    </div>
+</section>
+
+<section class="content-section">
+    <div class="container">
+        <div class="content-card mb-4">
+            <div class="row g-3 align-items-end">
+                <div class="col-lg-6">
+                    <label for="recipe-search" class="form-label">Search recipes</label>
+                    <input
+                        type="search"
+                        id="recipe-search"
+                        class="form-control"
+                        placeholder="Search by recipe name or ingredient..."
+                    >
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <label for="recipe-category" class="form-label">Category</label>
+                    <select id="recipe-category" class="form-select">
+                        <option value="all">All categories</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Healthy">Healthy</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Comfort Food">Comfort Food</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <label for="recipe-difficulty" class="form-label">Difficulty</label>
+                    <select id="recipe-difficulty" class="form-select">
+                        <option value="all">All levels</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h2 class="h4 mb-1">Our collection</h2>
+                <p class="text-secondary mb-0">A little inspiration for every day.</p>
+            </div>
+            <span class="recipe-category">6 RECIPES</span>
+        </div>
+
+        <div class="row g-4" id="recipe-list">
+            <div class="col-md-6 col-lg-4 recipe-item"
+                data-name="Creamy Herb Pasta"
+                data-ingredients="pasta herbs cream parmesan"
+                data-category="Italian"
+                data-difficulty="Easy">
+                <article class="recipe-card">
+                    <img class="recipe-image"
+                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80"
+                        alt="Creamy herb pasta">
+                    <div class="recipe-card-body">
+                        <span class="recipe-category">ITALIAN</span>
+                        <h3>Creamy Herb Pasta</h3>
+                        <p>Pasta with fresh herbs, parmesan and a creamy sauce.</p>
+                        <div class="recipe-meta"><span>⏱ 25 min</span><span>Easy</span></div>
+                        <a href="#recipe-details" class="btn btn-outline-success w-100 mt-3">View Recipe</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 recipe-item"
+                data-name="Fresh Garden Bowl"
+                data-ingredients="vegetables lettuce tomato cucumber"
+                data-category="Healthy"
+                data-difficulty="Easy">
+                <article class="recipe-card">
+                    <img class="recipe-image"
+                        src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
+                        alt="Fresh garden bowl">
+                    <div class="recipe-card-body">
+                        <span class="recipe-category">HEALTHY</span>
+                        <h3>Fresh Garden Bowl</h3>
+                        <p>A fresh and colorful bowl packed with vegetables.</p>
+                        <div class="recipe-meta"><span>⏱ 15 min</span><span>Easy</span></div>
+                        <a href="#recipe-details" class="btn btn-outline-success w-100 mt-3">View Recipe</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 recipe-item"
+                data-name="Homemade Pizza"
+                data-ingredients="pizza tomato mozzarella cheese"
+                data-category="Comfort Food"
+                data-difficulty="Medium">
+                <article class="recipe-card">
+                    <img class="recipe-image"
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                        alt="Homemade pizza">
+                    <div class="recipe-card-body">
+                        <span class="recipe-category">COMFORT FOOD</span>
+                        <h3>Homemade Pizza</h3>
+                        <p>A homemade classic with tomato sauce and melted cheese.</p>
+                        <div class="recipe-meta"><span>⏱ 40 min</span><span>Medium</span></div>
+                        <a href="#recipe-details" class="btn btn-outline-success w-100 mt-3">View Recipe</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 recipe-item"
+                data-name="Chocolate Cake"
+                data-ingredients="chocolate cocoa flour sugar"
+                data-category="Dessert"
+                data-difficulty="Medium">
+                <article class="recipe-card">
+                    <img class="recipe-image"
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+                        alt="Chocolate cake">
+                    <div class="recipe-card-body">
+                        <span class="recipe-category">DESSERT</span>
+                        <h3>Chocolate Cake</h3>
+                        <p>A rich chocolate cake for a special treat.</p>
+                        <div class="recipe-meta"><span>⏱ 50 min</span><span>Medium</span></div>
+                        <a href="#recipe-details" class="btn btn-outline-success w-100 mt-3">View Recipe</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 recipe-item"
+                data-name="Creamy Mushroom Risotto"
+                data-ingredients="rice mushrooms parmesan stock"
+                data-category="Italian"
+                data-difficulty="Medium">
+                <article class="recipe-card">
+                    <img class="recipe-image"
+                        src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&q=80"
+                        alt="Creamy mushroom risotto">
+                    <div class="recipe-card-body">
+                        <span class="recipe-category">ITALIAN</span>
+                        <h3>Creamy Mushroom Risotto</h3>
+                        <p>Creamy rice with mushrooms and parmesan cheese.</p>
+                        <div class="recipe-meta"><span>⏱ 35 min</span><span>Medium</span></div>
+                        <a href="#recipe-details" class="btn btn-outline-success w-100 mt-3">View Recipe</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 recipe-item"
+                data-name="Fruit Yogurt Parfait"
+                data-ingredients="yogurt fruit berries granola honey"
+                data-category="Healthy"
+                data-difficulty="Easy">
+                <article class="recipe-card">
+                    <img class="recipe-image"
+                        src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
+                        alt="Fruit yogurt parfait">
+                    <div class="recipe-card-body">
+                        <span class="recipe-category">HEALTHY</span>
+                        <h3>Fruit Yogurt Parfait</h3>
+                        <p>Yogurt layered with fresh fruit, granola and honey.</p>
+                        <div class="recipe-meta"><span>⏱ 10 min</span><span>Easy</span></div>
+                        <a href="#recipe-details" class="btn btn-outline-success w-100 mt-3">View Recipe</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id="no-recipes" class="empty-state mt-4 d-none">
+            <div class="empty-icon">🔎</div>
+            <h3>No recipes found</h3>
+            <p class="text-secondary mb-0">Try another search or category.</p>
+        </div>
+    </div>
+</section>
