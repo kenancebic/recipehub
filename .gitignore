@@ -1,19 +1,20 @@
-# Application logs
-backend/logs/*
-!backend/logs/.gitkeep
+# Local configuration and secrets
+backend/config/config.php
+backend/config/config.local.php
 
-# Environment and secret files
+# Logs
+backend/logs/
+*.log
+
+# Composer dependencies
+backend/vendor/
+
+# Environment files
 .env
 .env.*
-!.env.example
 
-# Dependencies
-vendor/
-
-# Operating system files
+# IDE and operating system files
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
-desktop.ini
-
-# Editor settings
-.vscode/
