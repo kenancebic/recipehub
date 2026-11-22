@@ -25,6 +25,25 @@ class RecipeIngredientDAO extends BaseDAO
         return $statement->fetchAll();
     }
 
+    public function updateRelation(
+        int $recipeId,
+        int $ingredientId,
+        string $quantity
+    ): bool {
+        $sql = 'UPDATE recipe_ingredients
+                SET quantity = :quantity
+                WHERE recipe_id = :recipe_id
+                AND ingredient_id = :ingredient_id';
+
+        $statement = $this->connection->prepare($sql);
+
+        return $statement->execute([
+            'quantity' => $quantity,
+            'recipe_id' => $recipeId,
+            'ingredient_id' => $ingredientId
+        ]);
+    }
+
     public function deleteRelation(int $recipeId, int $ingredientId): bool
     {
         $sql = 'DELETE FROM recipe_ingredients
@@ -35,7 +54,7 @@ class RecipeIngredientDAO extends BaseDAO
 
         return $statement->execute([
             'recipe_id' => $recipeId,
-            'ingredient_id' => $ingredientId,
+            'ingredient_id' => $ingredientId
         ]);
     }
 }
