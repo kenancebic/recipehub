@@ -10,4 +10,14 @@ class IngredientDAO extends BaseDAO
     {
         parent::__construct('ingredients');
     }
+
+    public function getByName(string $name): array|false
+    {
+        $sql = "SELECT * FROM ingredients WHERE name = :name";
+
+        $statement = $this->connection->prepare($sql);
+        $statement->execute(['name' => $name]);
+
+        return $statement->fetch();
+    }
 }

@@ -2,58 +2,25 @@
 
 ## Purpose
 
-This document records AI assistance used during the development of RecipeHub. Suggestions are reviewed and tested before being included in the project.
+AI assistance was used during development mainly when help was needed with understanding concepts, solving problems, and fixing errors.
 
-## Entry 1 — Project Planning
+## AI Assistance
 
-**Purpose:** Plan the project structure and organize the first milestone.
+- Helped explain PHP, SQL, JavaScript, and backend concepts when needed.
+- Provided guidance when encountering coding errors and implementation difficulties.
+- Helped review code and suggest possible improvements.
+- Assisted with project documentation and troubleshooting.
 
-**AI assistance:** Helped organize the frontend, backend, documentation folders, and initial development tasks.
+## Examples of Issues
 
-**Outcome:** Created the initial project folder structure.
+**1. FlightPHP Error Handling**
 
-## Entry 2 — Static Frontend
+AI helped identify why some API errors were not returning the expected JSON responses. The route handling was adjusted and tested.
 
-**Purpose:** Build the initial user interface.
+**2. OpenAPI Documentation**
 
-**AI assistance:** Helped draft HTML pages, CSS styling, navigation, recipe cards, and page templates.
-
-**Outcome:** Created the initial static frontend pages.
-
-## Entry 3 — Recipe Search and Filtering
-
-**Purpose:** Add search and filtering functionality to the recipes page.
-
-**AI assistance:** Helped implement JavaScript filtering by recipe name, ingredients, category, and difficulty.
-
-**Outcome:** Search and filtering were tested in the browser.
-
-## Entry 4 — Dynamic Recipe Details
-
-**Purpose:** Display the recipe selected by the user.
-
-**AI assistance:** Helped implement session storage and dynamic updates to the recipe details page.
-
-**Issue encountered:** The selected recipe was not always displayed because the details function could run before the page HTML had been inserted.
-
-**Resolution:** Updated the page-loading logic to call the display function after the details page was loaded. The user tested the frontend and reported that it worked.
-
-## Entry 5 — JavaScript Code Formatting
-
-**Purpose:** Replace the JavaScript file with a corrected version.
-
-**Issue encountered:** Extra formatting text was accidentally copied into the JavaScript file, causing editor errors.
-
-**Resolution:** Removed the extra text so the file began with the correct JavaScript statement. The user confirmed that the issue was resolved.
-
-## Entry 6 — Project Documentation
-
-**Purpose:** Prepare documentation for the initial milestone.
-
-**AI assistance:** Helped draft the preliminary database design, README, and development guidelines.
-
-**Outcome:** Created `docs/ERD.md`, `README.md`, and `AGENTS.md`.
+AI helped identify an incorrect file location. The OpenAPI file was moved to the correct backend documentation folder, and Swagger UI was tested.
 
 ## Review and Responsibility
 
-AI-generated suggestions are reviewed by the project developer. Functionality is tested in the browser where applicable. The developer is responsible for understanding, verifying, and maintaining the submitted code.
+The project was developed by the student. AI was used as a support tool when difficulties occurred. All suggestions were reviewed, implemented where appropriate, and tested by the student.
